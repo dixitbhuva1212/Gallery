@@ -1,0 +1,20 @@
+{
+  "name": "gallery-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@imagekit/javascript": "^5.4.1",
+    "@imagekit/nodejs": "^7.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.1",
+    "imagekit": "^5.2.0",
+    "mongoose": "^8.8.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}
