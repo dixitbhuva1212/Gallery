@@ -13,7 +13,9 @@ app.use(cors({
     "http://localhost:5173",
     "https://gallery-six-ecru.vercel.app"
   ]
-}));app.use(express.json());
+}));
+
+app.use(express.json());
 
 app.use("/api/images", imageRoutes);
 
