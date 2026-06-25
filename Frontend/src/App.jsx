@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect } from "react";
+import assest from './assets/logo.png'
 
 const API_BASE = import.meta.env.VITE_API_BASE;
 const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD;
@@ -161,6 +162,7 @@ function Lightbox({ images, index, onClose, onNav }) {
             className="flex items-center rounded-lg border border-white/15 bg-white/10 px-3 py-1.5 text-[13px] font-medium text-[#F4F2EC] transition-colors duration-150 hover:border-white/25 hover:bg-white/20"
           >
             <IconDownload />
+
             <span className="ml-1.5">Download</span>
           </button>
           <button
@@ -384,8 +386,8 @@ export default function App() {
         {/* Header */}
         <header className="mb-12 flex flex-wrap items-end justify-between gap-5 border-b border-[#E8E3D8] pb-7">
           <div className="flex items-center gap-3.5">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#1C1B19] text-[#FAFAF8] shadow-sm">
-              <IconAperture />
+            <div className="flex h-11 w-12 items-center justify-center rounded-xl bg-[#1C1B19] text-[#FAFAF8] shadow-sm">
+              <img src={assest} alt="" />
             </div>
             <div>
               <div className="mb-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#8A8478]">
