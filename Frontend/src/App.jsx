@@ -1,7 +1,8 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 
-const API_BASE = "http://localhost:5000/api/images";
-const ADMIN_PASSWORD = "@dixitb123#"; // change this to your password — see note below about why this isn't real security
+
+const API_BASE = import.meta.env.VITE_API_BASE;
+const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD;
 
 // ─── Icons ────────────────────────────────────────────────────────────────────
 const IconUpload = () => (
