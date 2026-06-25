@@ -127,7 +127,6 @@ function Lightbox({ images, index, onClose, onNav }) {
       window.open(img.url, "_blank");
     }
   };
-
   return (
     <div className="fixed inset-0 z-[200] flex items-center justify-center bg-[#1C1B19]/95" onClick={onClose}>
       <div
